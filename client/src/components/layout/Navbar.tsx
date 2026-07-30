@@ -20,22 +20,25 @@ export default function Navbar() {
 
             <Logo />
 
-            <nav className="hidden lg:flex items-center space-x-8">
-  {NAV_ITEMS.map((item) => (
-    <NavLink
-      key={item.label}
-      to={item.href}
-      className={({ isActive }) =>
-        `relative text-sm font-medium transition-colors duration-300 ${
-          isActive
-            ? "text-blue-600"
-            : "text-slate-700 hover:text-blue-600"
-        }`
-      }
-    >
-      {item.label}
-    </NavLink>
-  ))}
+           <nav className="hidden lg:flex">
+  <ul className="flex items-center gap-8">
+    {NAV_ITEMS.map((item) => (
+      <li key={item.label}>
+        <NavLink
+          to={item.href}
+          className={({ isActive }) =>
+            `text-sm font-medium transition-colors duration-200 ${
+              isActive
+                ? "text-blue-600"
+                : "text-slate-700 hover:text-blue-600"
+            }`
+          }
+        >
+          {item.label}
+        </NavLink>
+      </li>
+    ))}
+  </ul>
 </nav>
 
             <div className="hidden items-center gap-3 lg:flex">

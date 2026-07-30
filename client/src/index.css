@@ -28,3 +28,10 @@ a {
 button {
   cursor: pointer;
 }
+nav a {
+  display: inline;
+}
+
+nav {
+  display: block;
+}
