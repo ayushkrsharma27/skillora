@@ -9,7 +9,7 @@ const stats = [
 export default function Stats() {
   return (
     <section className="bg-white py-14">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 text-center md:grid-cols-3">
+      <div className="rounded-3xl bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-xl">
         {stats.map((item) => (
           <motion.div
             key={item.label}

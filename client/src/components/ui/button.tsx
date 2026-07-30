@@ -16,7 +16,7 @@ export default function Button({
     <button
       {...props}
       className={clsx(
-        "rounded-xl px-6 py-3 font-semibold transition-all duration-300 hover:-translate-y-1 active:scale-95",
+       "rounded-xl px-7 py-3.5 font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95",
 
         variant === "primary" &&
           "bg-blue-600 text-white hover:bg-blue-700 shadow-lg",

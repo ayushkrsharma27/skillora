@@ -11,8 +11,7 @@ export default function DashboardCard() {
         y: -8,
         scale: 1.02,
       }}
-      className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl"
-    >
+      className="w-full max-w-md rounded-3xl border border-white/40 bg-white/80 backdrop-blur-xl p-8 shadow-[0_25px_60px_rgba(37,99,235,0.18)]"    >
 
       <h3 className="text-xl font-bold text-slate-900">
         Student Dashboard
