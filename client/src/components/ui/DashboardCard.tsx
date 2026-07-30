@@ -1,8 +1,18 @@
 import { Award, BookOpen, CheckCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function DashboardCard() {
   return (
-    <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      whileHover={{
+        y: -8,
+        scale: 1.02,
+      }}
+      className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl"
+    >
 
       <h3 className="text-xl font-bold text-slate-900">
         Student Dashboard
@@ -44,6 +54,6 @@ export default function DashboardCard() {
         </div>
 
       </div>
-    </div>
+    </motion.div>
   );
 }

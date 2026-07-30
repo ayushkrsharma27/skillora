@@ -5,9 +5,14 @@ import DashboardCard from "../ui/DashboardCard";
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-slate-50 via-blue-50 to-white">
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-white">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 py-24 lg:grid-cols-2 lg:px-8">
+        {/* Background Decoration */}
+        <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-blue-300/20 blur-3xl"></div>
 
+        <div className="absolute top-1/2 -right-24 h-80 w-80 rounded-full bg-indigo-300/20 blur-3xl"></div>
+
+        <div className="absolute bottom-0 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-cyan-200/20 blur-3xl"></div>
         {/* Left */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
