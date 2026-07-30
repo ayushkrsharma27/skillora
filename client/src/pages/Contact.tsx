@@ -1,7 +1,3 @@
 export default function Contact() {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-5xl font-bold">Contact</h1>
-    </div>
-  );
+  return <h1 className="p-10 text-3xl">Contact Page</h1>;
 }

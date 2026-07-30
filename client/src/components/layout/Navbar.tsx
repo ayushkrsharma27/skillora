@@ -50,7 +50,7 @@ export default function Navbar() {
                 </Button>
               </Link>
 
-              <Link to="/student-register">
+              <Link to="/get-started">
                 <Button>
                   Get Started
                 </Button>
